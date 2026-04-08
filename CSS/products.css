@@ -1,0 +1,79 @@
+/* ===== TỔNG QUAN ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Bạn có thể đổi font theo ý muốn */
+}
+
+body {
+  background-image: url("../images/backGround-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== INTRODUCE (Phần Giới Thiệu) ===== */
+.introduce {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.introduce h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.introduce p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* ===== SELECT FILTER (Thanh Lọc Sản Phẩm) ===== */
+.select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap; /* Giúp các bộ lọc tự động xuống dòng nếu màn hình nhỏ */
+}
+
+/* ===== FILTER ITEMS (Các ô chọn) ===== */
+.filter {
+    padding: 8px 16px;
+    border: 1px solid #007bff; /* Đồng bộ viền xanh với header */
+    background-color: white;
+    color: #333;
+    border-radius: 20px; /* Bo góc giống button trong header */
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Hover và Focus cho ô lọc */
+.filter:hover, .filter:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* ===== PRODUCT SECTION (Khu vực chứa sản phẩm) ===== */
+.product-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== PRODUCT LIST (Lưới sản phẩm) ===== */
+.product-container {
+    display: grid;
+    /* Tự động chia cột, mỗi cột rộng tối thiểu 250px */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
