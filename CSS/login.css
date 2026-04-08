@@ -1,0 +1,105 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background-image: url("../images/backGround-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== LOGIN CONTAINER ===== */
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 100px auto;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/* Hover nhẹ */
+.login-container:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== TITLE ===== */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* ===== FORM ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+.login-form label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input */
+.login-form input {
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Focus */
+.login-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.2);
+}
+
+/* Button */
+.login-form button {
+  padding: 12px;
+  background: linear-gradient(135deg, #007bff, #00a6ff);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+/* Hover button */
+.login-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+}
+
+/* Text dưới */
+.login-container p {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Link */
+.login-container a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}

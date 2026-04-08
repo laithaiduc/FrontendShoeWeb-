@@ -1,0 +1,94 @@
+/* ===== HEADER ===== */
+.main-header {
+  background-color: #ffffff;
+  padding: 15px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Menu */
+.main-header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+/* Link */
+.main-header a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Hover */
+.main-header a:hover {
+  color: #007bff;
+}
+
+/* Button */
+.main-header button {
+  padding: 6px 14px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover button */
+.main-header button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Khoảng cách */
+.main-header li {
+  margin: 0 10px;
+}
+/* Logo */
+.logo img {
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Menu ngang */
+.main-header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Đẩy logo sang trái, nút sang phải */
+.main-header ul {
+  justify-content: space-between;
+}
+.main-header a {
+  position: relative;
+}
+
+/* Line ẩn */
+.main-header a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: 0.3s;
+}
+
+/* Hover hiện ra */
+.main-header a:hover::after {
+  width: 100%;
+}
+.main-header {
+  border-bottom: 1px solid #eee;
+}
+
+.main-header li:not(:last-child)::after {
+  background-color: #eee;
+}
